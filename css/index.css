@@ -1,0 +1,165 @@
+/*Para todo body*/
+body {
+ background-image: url('../img/fondo.png');
+ background-repeat:no-repeat; 
+ background-attachment: fixed;
+ background-size: 100% 100%;
+ font-family: texto;
+ color:floralwhite;
+}
+
+h1{ 
+  color:lawngreen;
+  text-align: center;
+  font-family: Rick;
+  font-size: 6em;
+  margin-top: 0px;
+}
+
+video{
+  width:700px;
+  height:500px;
+}
+
+input, select{
+  height: 2em ;
+}
+
+textarea{
+  width:200px;
+  height:200px;
+}
+
+/*Tablas*/
+table{ 
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 75%; 
+  background-color: aqua;
+  margin-bottom: 20px;
+  color: black;
+}
+
+td, th{
+  border: 1px solid black; 
+  border-collapse: collapse; 
+  padding: 8px;
+}
+
+th{
+  background-color: deeppink;
+}
+
+tr:nth-child(even){ 
+  background-color: oldlace;
+}
+
+/*Desgloses*/
+article a:hover{
+  color: tomato;
+}
+
+/*Flexbox*/
+.flexbox{
+  display: flex;
+  height: 35px;
+  position: fixed;
+  z-index: 4;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  flex-wrap: not-allowedwrap;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.flex{
+  display: flex;
+}
+/*Barra de navegación*/
+ul {
+  list-style-type: none;
+  font-size: 110%;
+}
+
+li {
+  border-right: 1px solid black;
+}
+
+li a {
+  padding: 8px;
+  background-color: lawngreen;
+  text-decoration: none;
+  color: black;
+}
+
+article a{
+  color: lawngreen;
+}
+
+li a:hover{
+  color: lawngreen;
+  background-color: indigo;
+}
+
+/*Casos especiales*/
+.inicio{
+  z-index: -2;
+  left: 0px;
+  top: 0px;
+}
+
+.img1{
+  width:650px;
+  height:400px;
+}
+
+.img2{
+  width:300px; 
+  height:400px;
+}
+
+.img3{ 
+  width:300px; 
+  height:400px;
+}
+
+.img4{
+  width:150px; 
+  height:100px;
+}
+
+.img5{
+  width:100px; 
+  height:100px;
+}
+
+.img6{
+  width:125px; 
+  height:100px;
+}
+
+.nomargin{
+  margin-top: 0px;
+}
+.cabeza1{
+  text-align:center;
+}
+
+.cabeza2{
+  background-color: gold !important;
+}
+
+/*Fuentes*/
+@font-face {
+  font-family: Rick;
+  src: url(../font/rick.ttf);
+}
+
+@font-face {
+  font-family: texto;
+  src: url(../font/texto.ttf);
+}

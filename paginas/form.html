@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="..\img\portal.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+    <title>Formulario Usuario</title>
+  </head>
+  <body>
+    <a id="inicio" class="inicio">grande</a>
+    <nav>
+    <ul>
+      <div class="flexbox">
+        <li><a href="..\index.html">Página principal</a></li>
+        <li><a href=".\teoría.html">Teoría</a></li>
+        <li><a href="mailto:ricksanchez@gmail.com">Haz clik aquí para enviar correo</a></li>
+        <li><a href="#inicio">Volver al principio</a></li>
+        </div>
+      </ul>
+    </nav>
+    <h1>Formulario de usuario</h1>
+    <form>
+      <label for="usuario">Usuario:</label>          
+        <input type="text" id="usuario" name="usuario" minlength="4" maxlength="30" size="45" required pattern="[A-Za-z9-0._/-]" placeholder="4-30 carácteres.Puedes usar los siguientes símbolos(/.-_)">
+      <br>
+      <br>        
+      <label for="pwd">Contraseña:</label>
+        <input type="password" id="pwd" name="pwd" pattern="[A-Za-z0-9]{8}" size="22" required placeholder="8 caracteres.Números y letras">
+      <br>
+      <br>
+      <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" minlength="2" maxlength="30" required pattern="[A-Za-z]+">
+      <br>
+      <br>
+      <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="correo@gmail.com">
+      <br>
+      <br>
+      <label for="edad">Selecciona tu rango de edad:</label>
+        <select id="edad" name="edad" size="1">
+          <option id="edad" value="1">>10</option>
+          <option id="edad" value="2">10-18</option>
+          <option id="edad" value="3">19-25</option>
+          <option id="edad" value="4">26-40</option>
+          <option id="edad" value="5">40-55</option>
+          <option id="edad" value="6">+55</option>
+        </select>
+      <br>
+      <br>
+      <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"  pattern="[0-9]{8}[A-Z]{1}" placeholder="8 números y una letra">
+      <br>
+      <br>
+      <label for="telefono">Número de teléfono:</label>
+        <input type="text" id="telefono" name="telefono"  pattern="[0-9]{9}" placeholder="9 números">
+      <br>
+      <br>
+      <label for="personajes">Personaje favorito:</label><br>
+        <input type="radio" name="personajes" value="rick">Rick<br><img src="..\img\rick.jpeg" class="img4"><br><br>
+        <input type="radio" name="personajes" value="morty">Morty<br><img src="..\img\morty.jpg" class="img4"><br><br>
+        <input type="radio" name="personajes" value="sam">Sam<br><img src="..\img\sam.jpg" class="img5"><br><br>
+        <input type="radio" name="personajes" value="jerry">Jerry<br><img src="..\img\jerry.png" class="img5"><br><br>
+        <input type="radio" name="personajes" value="pajaro">Persona pájaro<br><img src="..\img\pajaro.png" class="img6"><br><br>
+        <input type="radio" name="personajes" value="beth">Beth<br><img src="..\img\beth.png" class="img6">
+      <br>
+      <br>
+      <label for="message"></label>
+        <textarea name="message" placeholder="Observaciones"></textarea>
+      <br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+      <button onclick="alert('Si tienes dudas lee bien los comentarios en cada apartado')">Ayuda</button>
+    </form>
+  </body>
+</html>
